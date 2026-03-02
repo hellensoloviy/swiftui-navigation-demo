@@ -14,6 +14,7 @@
 		408048522F55A4A5000F4F32 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408048512F55A4A5000F4F32 /* SettingsView.swift */; };
 		4080485B2F55A849000F4F32 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4080485A2F55A849000F4F32 /* FoodItem.swift */; };
 		4080485D2F55A85B000F4F32 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4080485C2F55A85B000F4F32 /* RowView.swift */; };
+		4080485F2F55A8E8000F4F32 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4080485E2F55A8E8000F4F32 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		408048512F55A4A5000F4F32 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		4080485A2F55A849000F4F32 /* FoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
 		4080485C2F55A85B000F4F32 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
+		4080485E2F55A8E8000F4F32 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -128,8 +130,9 @@
 			isa = PBXGroup;
 			children = (
 				4080484F2F55A47F000F4F32 /* ListView.swift */,
+				4080485E2F55A8E8000F4F32 /* DetailView.swift */,
 				4080485C2F55A85B000F4F32 /* RowView.swift */,
-				408048512F55A4A5000F4F32 /* SettingsView.swift */,
+				408048602F55A8F3000F4F32 /* Settings */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -140,6 +143,14 @@
 				4080485A2F55A849000F4F32 /* FoodItem.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		408048602F55A8F3000F4F32 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				408048512F55A4A5000F4F32 /* SettingsView.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +298,7 @@
 				4080484A2F55A457000F4F32 /* ContentView.swift in Sources */,
 				4080485D2F55A85B000F4F32 /* RowView.swift in Sources */,
 				408048522F55A4A5000F4F32 /* SettingsView.swift in Sources */,
+				4080485F2F55A8E8000F4F32 /* DetailView.swift in Sources */,
 				4080484B2F55A457000F4F32 /* navigation_demo_swiftuiApp.swift in Sources */,
 				408048502F55A47F000F4F32 /* ListView.swift in Sources */,
 				4080485B2F55A849000F4F32 /* FoodItem.swift in Sources */,

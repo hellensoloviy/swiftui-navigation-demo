@@ -68,7 +68,7 @@ struct ListView: View {
             .listStyle(.insetGrouped)
             .navigationTitle("Food List")
             .navigationDestination(for: FoodItem.self) { item in
-//                DetailView(item: item)
+                DetailView(item: item)
             }
         }
         
@@ -76,8 +76,5 @@ struct ListView: View {
 }
 
 
-// MARK: - Model
 
-
-// MARK: - Row View
 
