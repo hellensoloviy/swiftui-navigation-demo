@@ -6,6 +6,16 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4080484A2F55A457000F4F32 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408048472F55A457000F4F32 /* ContentView.swift */; };
+		4080484B2F55A457000F4F32 /* navigation_demo_swiftuiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408048482F55A457000F4F32 /* navigation_demo_swiftuiApp.swift */; };
+		4080484C2F55A457000F4F32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 408048462F55A457000F4F32 /* Assets.xcassets */; };
+		408048502F55A47F000F4F32 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4080484F2F55A47F000F4F32 /* ListView.swift */; };
+		408048522F55A4A5000F4F32 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408048512F55A4A5000F4F32 /* SettingsView.swift */; };
+		4080485B2F55A849000F4F32 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4080485A2F55A849000F4F32 /* FoodItem.swift */; };
+		4080485D2F55A85B000F4F32 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4080485C2F55A85B000F4F32 /* RowView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		4080482A2F55A2B9000F4F32 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,14 +37,16 @@
 		4080481C2F55A2B6000F4F32 /* navigation-demo-swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "navigation-demo-swiftui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		408048292F55A2B9000F4F32 /* navigation-demo-swiftuiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "navigation-demo-swiftuiTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		408048332F55A2B9000F4F32 /* navigation-demo-swiftuiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "navigation-demo-swiftuiUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		408048462F55A457000F4F32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		408048472F55A457000F4F32 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		408048482F55A457000F4F32 /* navigation_demo_swiftuiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = navigation_demo_swiftuiApp.swift; sourceTree = "<group>"; };
+		4080484F2F55A47F000F4F32 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		408048512F55A4A5000F4F32 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		4080485A2F55A849000F4F32 /* FoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
+		4080485C2F55A85B000F4F32 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		4080481E2F55A2B6000F4F32 /* navigation-demo-swiftui */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "navigation-demo-swiftui";
-			sourceTree = "<group>";
-		};
 		4080482C2F55A2B9000F4F32 /* navigation-demo-swiftuiTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "navigation-demo-swiftuiTests";
@@ -75,7 +87,7 @@
 		408048132F55A2B6000F4F32 = {
 			isa = PBXGroup;
 			children = (
-				4080481E2F55A2B6000F4F32 /* navigation-demo-swiftui */,
+				408048492F55A457000F4F32 /* navigation-demo-swiftui */,
 				4080482C2F55A2B9000F4F32 /* navigation-demo-swiftuiTests */,
 				408048362F55A2B9000F4F32 /* navigation-demo-swiftuiUITests */,
 				4080481D2F55A2B6000F4F32 /* Products */,
@@ -92,6 +104,44 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		408048492F55A457000F4F32 /* navigation-demo-swiftui */ = {
+			isa = PBXGroup;
+			children = (
+				408048482F55A457000F4F32 /* navigation_demo_swiftuiApp.swift */,
+				408048472F55A457000F4F32 /* ContentView.swift */,
+				408048592F55A83F000F4F32 /* Models */,
+				4080484E2F55A46D000F4F32 /* Views */,
+				4080484D2F55A45E000F4F32 /* Recources */,
+			);
+			path = "navigation-demo-swiftui";
+			sourceTree = "<group>";
+		};
+		4080484D2F55A45E000F4F32 /* Recources */ = {
+			isa = PBXGroup;
+			children = (
+				408048462F55A457000F4F32 /* Assets.xcassets */,
+			);
+			path = Recources;
+			sourceTree = "<group>";
+		};
+		4080484E2F55A46D000F4F32 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4080484F2F55A47F000F4F32 /* ListView.swift */,
+				4080485C2F55A85B000F4F32 /* RowView.swift */,
+				408048512F55A4A5000F4F32 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		408048592F55A83F000F4F32 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4080485A2F55A849000F4F32 /* FoodItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +156,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				4080481E2F55A2B6000F4F32 /* navigation-demo-swiftui */,
 			);
 			name = "navigation-demo-swiftui";
 			packageProductDependencies = (
@@ -212,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4080484C2F55A457000F4F32 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +284,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4080484A2F55A457000F4F32 /* ContentView.swift in Sources */,
+				4080485D2F55A85B000F4F32 /* RowView.swift in Sources */,
+				408048522F55A4A5000F4F32 /* SettingsView.swift in Sources */,
+				4080484B2F55A457000F4F32 /* navigation_demo_swiftuiApp.swift in Sources */,
+				408048502F55A47F000F4F32 /* ListView.swift in Sources */,
+				4080485B2F55A849000F4F32 /* FoodItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
