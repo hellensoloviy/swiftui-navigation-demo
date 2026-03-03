@@ -14,40 +14,46 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var showOnboarding: Bool = true
+    @AppStorage("showOnboarding") private var showOnboarding: Bool = true
     
     var body: some View {
 
-        TabView {
-            
-            NavigationStack {
-                ListView()
-                    .navigationTitle("Foods")
-                    .toolbarBackground(.accent, for: .navigationBar) /// will show on scroll
-                    .navigationDestination(for: FoodItem.self) { food in
-                        DetailView(item: food)
-                    }
+        ZStack {
+            if showOnboarding {
+                OnboardingView(showOnboarding: $showOnboarding)
+                    .background(.white)
+                    .transition(.move(edge: .bottom))
 
-            }
-            .tabItem {
-                Label("First", systemImage: "globe")
-            }
-            
-            ImagesGalleryView()
-                .tabItem {
-                    Label("Images", systemImage: "2.circle")
+            } else {
+                TabView {
+                    
+                    NavigationStack {
+                        ListView()
+                            .navigationTitle("Foods")
+                            .toolbarBackground(.accent, for: .navigationBar) /// will show on scroll
+                            .navigationDestination(for: FoodItem.self) { food in
+                                DetailView(item: food)
+                            }
+                        
+                    }
+                    .tabItem {
+                        Label("First", systemImage: "globe")
+                    }
+                    
+                    ImagesGalleryView()
+                        .tabItem {
+                            Label("Images", systemImage: "2.circle")
+                        }
+                    
+                    SettingsView()
+                        .tabItem {
+                            Label("Settings", systemImage: "gear")
+                        }
+                    
                 }
-            
-            SettingsView()
-                .tabItem {
-                    Label("Settings", systemImage: "gear")
-                }
-            
+            }
         }
-        .fullScreenCover(isPresented: $showOnboarding) {
-            OnboardingView(showOnboarding: $showOnboarding)
-        }
-            
+ 
     }
 }
 

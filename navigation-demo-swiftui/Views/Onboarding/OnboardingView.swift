@@ -35,6 +35,9 @@ struct OnboardingView: View {
             .tag(2)
 
         }
+        .onChange(of: selection, { oldValue, newValue in
+            /// here put an action if needed
+        })
         .tabViewStyle(.page(indexDisplayMode: .always))
         .indexViewStyle(.page(backgroundDisplayMode: .always))
     }
