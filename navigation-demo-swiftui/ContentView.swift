@@ -19,6 +19,8 @@ struct ContentView: View {
             
             NavigationStack {
                 ListView()
+                    .navigationTitle("Foods")
+                    .toolbarBackground(.accent, for: .navigationBar) /// will show on scroll
                     .navigationDestination(for: FoodItem.self) { food in
                         DetailView(item: food)
                     }

@@ -16,6 +16,8 @@
 		4080485D2F55A85B000F4F32 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4080485C2F55A85B000F4F32 /* RowView.swift */; };
 		4080485F2F55A8E8000F4F32 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4080485E2F55A8E8000F4F32 /* DetailView.swift */; };
 		408048632F55AB64000F4F32 /* ImagesGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408048622F55AB64000F4F32 /* ImagesGalleryView.swift */; };
+		40AE465A2F56D85A005FE57E /* OnboardingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AE46592F56D85A005FE57E /* OnboardingPageView.swift */; };
+		40AE465C2F56D864005FE57E /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AE465B2F56D864005FE57E /* OnboardingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		4080485C2F55A85B000F4F32 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
 		4080485E2F55A8E8000F4F32 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		408048622F55AB64000F4F32 /* ImagesGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesGalleryView.swift; sourceTree = "<group>"; };
+		40AE46592F56D85A005FE57E /* OnboardingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageView.swift; sourceTree = "<group>"; };
+		40AE465B2F56D864005FE57E /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -176,6 +180,8 @@
 		40AE46582F56D827005FE57E /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				40AE46592F56D85A005FE57E /* OnboardingPageView.swift */,
+				40AE465B2F56D864005FE57E /* OnboardingView.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -325,9 +331,11 @@
 				4080484A2F55A457000F4F32 /* ContentView.swift in Sources */,
 				4080485D2F55A85B000F4F32 /* RowView.swift in Sources */,
 				408048522F55A4A5000F4F32 /* SettingsView.swift in Sources */,
+				40AE465C2F56D864005FE57E /* OnboardingView.swift in Sources */,
 				4080485F2F55A8E8000F4F32 /* DetailView.swift in Sources */,
 				408048632F55AB64000F4F32 /* ImagesGalleryView.swift in Sources */,
 				4080484B2F55A457000F4F32 /* navigation_demo_swiftuiApp.swift in Sources */,
+				40AE465A2F56D85A005FE57E /* OnboardingPageView.swift in Sources */,
 				408048502F55A47F000F4F32 /* ListView.swift in Sources */,
 				4080485B2F55A849000F4F32 /* FoodItem.swift in Sources */,
 			);
