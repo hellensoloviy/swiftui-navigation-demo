@@ -180,8 +180,8 @@
 		40AE46582F56D827005FE57E /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				40AE46592F56D85A005FE57E /* OnboardingPageView.swift */,
 				40AE465B2F56D864005FE57E /* OnboardingView.swift */,
+				40AE46592F56D85A005FE57E /* OnboardingPageView.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";

@@ -13,6 +13,9 @@ import SwiftUI
 
 
 struct ContentView: View {
+    
+    @State private var showOnboarding: Bool = true
+    
     var body: some View {
 
         TabView {
@@ -40,6 +43,9 @@ struct ContentView: View {
                     Label("Settings", systemImage: "gear")
                 }
             
+        }
+        .fullScreenCover(isPresented: $showOnboarding) {
+            OnboardingView(showOnboarding: $showOnboarding)
         }
             
     }
