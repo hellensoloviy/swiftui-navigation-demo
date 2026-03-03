@@ -15,11 +15,11 @@ struct RowView: View {
     var body: some View {
         HStack(spacing: 12) {
             Text(item.icon)
-                .font(.system(size: 24))
+                .font(.system(size: 20))
             
             Text(item.name)
                 .font(.headline)
         }
-        .padding(.vertical, 4)
+//        .padding(.vertical, 4)
     }
 }

@@ -17,14 +17,20 @@ struct ContentView: View {
 
         TabView {
             
-            ListView()
-                .tabItem {
-                    Label("First", systemImage: "globe")
-                }
+            NavigationStack {
+                ListView()
+                    .navigationDestination(for: FoodItem.self) { food in
+                        DetailView(item: food)
+                    }
+
+            }
+            .tabItem {
+                Label("First", systemImage: "globe")
+            }
             
-            Text("Second")
+            ImagesGalleryView()
                 .tabItem {
-                    Label("Second", systemImage: "2.circle")
+                    Label("Images", systemImage: "2.circle")
                 }
             
             SettingsView()
