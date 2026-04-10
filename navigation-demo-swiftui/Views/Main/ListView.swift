@@ -9,7 +9,9 @@ import SwiftUI
 
 
 #Preview {
-    ListView()
+    NavigationStack {
+        ListView()
+    }
 }
 
 
@@ -49,6 +51,9 @@ struct ListView: View {
                     }
                 }
             }
+        }
+        .navigationDestination(for: FoodItem.self) { item in
+            DetailView(item: item)
         }
         .listStyle(.insetGrouped)
 
