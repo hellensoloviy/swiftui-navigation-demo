@@ -28,7 +28,24 @@ struct ListView: View {
         FoodItem(icon: "🥬", name: "Lettuce", category: .vegetable),
         FoodItem(icon: "🌶️", name: "Pepper", category: .vegetable),
         FoodItem(icon: "🧅", name: "Onion", category: .vegetable),
-        FoodItem(icon: "🥕", name: "Carrot", category: .vegetable)
+        FoodItem(icon: "🥕", name: "Carrot", category: .vegetable),
+        FoodItem(icon: "🥦", name: "Broccoli", category: .vegetable),
+        FoodItem(icon: "🥒", name: "Cucumber", category: .vegetable),
+        FoodItem(icon: "🍆", name: "Eggplant", category: .vegetable),
+        FoodItem(icon: "🌽", name: "Corn", category: .vegetable),
+        FoodItem(icon: "🍅", name: "Tomato", category: .vegetable),
+        FoodItem(icon: "🧄", name: "Garlic", category: .vegetable),
+        FoodItem(icon: "🥔", name: "Potato", category: .vegetable),
+        FoodItem(icon: "🍠", name: "Sweet Potato", category: .vegetable),
+        FoodItem(icon: "🥑", name: "Avocado", category: .vegetable),
+        FoodItem(icon: "🫑", name: "Bell Pepper", category: .vegetable),
+        FoodItem(icon: "🥗", name: "Mixed Greens", category: .vegetable)
+    ]
+    
+    private let rows = [
+        GridItem(.fixed(100)),
+        GridItem(.fixed(100))
+
     ]
  
     var body: some View {
@@ -45,11 +62,19 @@ struct ListView: View {
             
             // Vegetables Section
             Section(header: Text("🥕 Vegetables")) {
-                ForEach(vegetables) { item in
-                    NavigationLink(value: item) {
-                        RowView(item: item)
+
+                ScrollView(.horizontal, showsIndicators: false) {
+                    LazyHGrid(rows: rows, spacing: 12) {
+                        ForEach(vegetables) { item in
+                            NavigationLink(value: item) {
+                                ItemView(item: item)
+                            }
+                        }
                     }
+                    .padding(.horizontal, 1) // prevents clipping
                 }
+                .frame(height: 200)
+
             }
         }
         .navigationDestination(for: FoodItem.self) { item in
@@ -59,6 +84,25 @@ struct ListView: View {
 
     }
         
+}
+
+struct ItemView: View {
+    
+    let item: FoodItem
+    
+    var body: some View {
+        VStack(spacing: 12) {
+            Text(item.icon)
+                .font(.system(size: 20))
+            
+            Text(item.name)
+                .font(.headline)
+        }
+        .padding()
+        .background(.ultraThinMaterial)
+        .clipShape(.rect(corners: .concentric(minimum: .fixed(16)), isUniform: true))
+
+    }
 }
 
 
