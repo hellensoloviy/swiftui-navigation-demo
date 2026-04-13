@@ -44,6 +44,7 @@ struct ListView: View {
     
     private let rows = [
         GridItem(.fixed(100)),
+        GridItem(.fixed(100)),
         GridItem(.fixed(100))
 
     ]
@@ -71,9 +72,9 @@ struct ListView: View {
                             }
                         }
                     }
-                    .padding(.horizontal, 1) // prevents clipping
+                    .padding(.horizontal, 1)
                 }
-                .frame(height: 200)
+                .frame(height: 300)
 
             }
         }
@@ -99,6 +100,7 @@ struct ItemView: View {
                 .font(.headline)
         }
         .padding()
+        .frame(width: 100, height: 100)
         .background(.ultraThinMaterial)
         .clipShape(.rect(corners: .concentric(minimum: .fixed(16)), isUniform: true))
 
